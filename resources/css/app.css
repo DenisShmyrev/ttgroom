@@ -1,0 +1,30 @@
+/* Основные цвета тематики */
+:root {
+    --ttg-primary: #6c3b8a; /* Фиолетовый */
+    --ttg-secondary: #1a1a2e; /* Тёмно-синий */
+    --ttg-accent: #e94560; /* Красный */
+}
+
+body {
+    background: url('https://images.unsplash.com/photo-1608889825205-eebdb9fc5806') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    min-height: 100vh;
+}
+
+.ttg-card {
+    background: rgba(26, 26, 46, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(108, 59, 138, 0.5);
+}
+
+.ttg-btn-primary {
+    background: var(--ttg-primary);
+    border: none;
+    transition: all 0.3s;
+}
+
+.ttg-btn-primary:hover {
+    background: var(--ttg-accent);
+    transform: translateY(-2px);
+}
